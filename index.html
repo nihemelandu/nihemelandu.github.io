@@ -2,141 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ngozi Ihemelandu – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Science Projects – Ngozi Ihemelandu</title>
   <style>
-    :root {
-      --bg-light: #f4f4f4;
-      --text-light: #222;
-      --bg-dark: #1a1a1a;
-      --text-dark: #f4f4f4;
-      --accent: #0077cc;
-    }
-
     body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
       margin: 0;
       padding: 2rem;
-      font-family: Arial, sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background-color 0.3s, color 0.3s;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
-      text-align: center;
     }
 
     h1 {
-      margin-bottom: 0.2rem;
+      text-align: center;
+      color: #0077cc;
     }
 
-    p {
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      transition: box-shadow 0.2s;
+    }
+
+    .project:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .project h2 {
       margin-top: 0;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-      line-height: 1.5;
     }
 
-    .section {
-      margin-top: 2rem;
+    .project p {
+      margin: 0.5rem 0;
     }
 
-    .links,
-    .sub-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 0;
-      list-style: none;
-    }
-
-    a {
+    .project a {
+      color: #0077cc;
       text-decoration: none;
-      color: var(--accent);
-      border: 2px solid var(--accent);
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      transition: all 0.2s;
+      border: 1px solid #0077cc;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
       display: inline-block;
+      margin-top: 0.5rem;
+      transition: 0.2s;
     }
 
-    a:hover {
-      background-color: var(--accent);
+    .project a:hover {
+      background: #0077cc;
       color: white;
     }
 
-    .toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      color: #777;
     }
 
-    .toggle button {
-      background: none;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
-
-    .dark-mode a {
-      color: #66ccff;
-      border-color: #66ccff;
-    }
-
-    .dark-mode a:hover {
-      background-color: #66ccff;
-      color: #111;
-    }
-
-    .dark-mode .toggle button {
-      color: #66ccff;
-      border-color: #66ccff;
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="toggle">
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </div>
   <div class="container">
-    <h1>Ngozi Ihemelandu</h1>
-    <p>
-      I’m a data scientist leveraging machine learning and causal inference to tackle uncertainty in supply chain decision-making. My research interests include using causal inference to uncover the true effects of recommended items on user behavior.
-    </p>
+    <h1>Data Science Projects</h1>
 
-    <div class="section">
-      <h2>Research</h2>
-      <ul class="links">
-        <li><a href="https://nihemelandu.github.io/research-portfolio/" target="_blank">Research Portfolio</a></li>
-      </ul>
+    <div class="project">
+      <h2>Segment-Based Inventory Allocation</h2>
+      <p>
+        A machine learning project focused on demand segmentation to optimize inventory decisions across customer types.
+      </p>
+      <a href="https://github.com/nihemelandu/segment-based-inventory-allocation" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="section">
-      <h2>Data Science Projects</h2>
-      <ul class="links">
-        <li><a href="https://nihemelandu.github.io/Data-Science-Projects/" target="_blank">Project Overview</a></li>
-      </ul>
-      <ul class="sub-links">
-        <li><a href="https://github.com/nihemelandu/segment-based-inventory-allocation" target="_blank">Segment-Based Inventory Allocation</a></li>
-        <li><a href="https://github.com/nihemelandu/customer-lifetime-value" target="_blank">Customer Lifetime Value</a></li>
-      </ul>
+    <div class="project">
+      <h2>Customer Lifetime Value</h2>
+      <p>
+        Estimating CLV using probabilistic models and transactional data — supports marketing and retention strategies.
+      </p>
+      <a href="https://github.com/nihemelandu/customer-lifetime-value" target="_blank">View on GitHub</a>
     </div>
+
+    <!-- You can easily add more projects here using the same format -->
+
+    <footer>
+      &copy; Ngozi Ihemelandu · <a href="https://nihemelandu.github.io">Back to homepage</a>
+    </footer>
   </div>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 </body>
 </html>
