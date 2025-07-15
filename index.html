@@ -2,55 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ngozi Ihemelandu - Portfolio Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngozi Ihemelandu – Portfolio</title>
   <style>
+    :root {
+      --bg-light: #f4f4f4;
+      --text-light: #222;
+      --bg-dark: #1a1a1a;
+      --text-dark: #f4f4f4;
+      --accent: #0077cc;
+    }
+
     body {
+      margin: 0;
+      padding: 2rem;
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 0.2rem;
-    }
-    p {
-      text-align: center;
-      color: #666;
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-      border: 2px solid #0066cc;
-      border-radius: 5px;
+      background-color: var(--bg-light);
+      color: var(--text-light);
       transition: background-color 0.3s, color 0.3s;
     }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0.2rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .links,
+    .sub-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
     a:hover {
-      background-color: #0066cc;
+      background-color: var(--accent);
       color: white;
+    }
+
+    .toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .toggle button {
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .dark-mode a {
+      color: #66ccff;
+      border-color: #66ccff;
+    }
+
+    .dark-mode a:hover {
+      background-color: #66ccff;
+      color: #111;
+    }
+
+    .dark-mode .toggle button {
+      color: #66ccff;
+      border-color: #66ccff;
     }
   </style>
 </head>
 <body>
-  <h1>Ngozi Ihemelandu</h1>
-  <p>Welcome to my portfolio homepage. Explore my work below:</p>
-  <ul>
-    <li><a href="https://nihemelandu.github.io/research-portfolio" target="_blank" rel="noopener">Research Portfolio</a></li>
-    <li><a href="https://nihemelandu.github.io/data-science-projects" target="_blank" rel="noopener">Data Science Projects</a></li>
-  </ul>
+  <div class="toggle">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+  <div class="container">
+    <h1>Ngozi Ihemelandu</h1>
+    <p>
+      I’m a data scientist leveraging machine learning and causal inference to tackle uncertainty in supply chain decision-making. My research interests include using causal inference to uncover the true effects of recommended items on user behavior.
+    </p>
+
+    <div class="section">
+      <h2>Research</h2>
+      <ul class="links">
+        <li><a href="https://nihemelandu.github.io/research-portfolio/" target="_blank">Research Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Data Science Projects</h2>
+      <ul class="links">
+        <li><a href="https://nihemelandu.github.io/Data-Science-Projects/" target="_blank">Project Overview</a></li>
+      </ul>
+      <ul class="sub-links">
+        <li><a href="https://github.com/nihemelandu/segment-based-inventory-allocation" target="_blank">Segment-Based Inventory Allocation</a></li>
+        <li><a href="https://github.com/nihemelandu/customer-lifetime-value" target="_blank">Customer Lifetime Value</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
