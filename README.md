@@ -1,8 +1,8 @@
 # Ngozi Ihemelandu
 
 **PhD Data Scientist**  
-Statistical Modeling · Hypothesis Testing · Causal Inference · Machine Learning · Simulation  
-Solving supply chain challenges with data
+Causal Inference · Machine Learning · Simulation · Optimization · Statistical Modeling  
+Turning complex customer and supply chain data into measurable e-commerce growth
 
 ---
 
