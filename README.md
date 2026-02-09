@@ -6,7 +6,7 @@ Turning complex customer and supply chain data into measurable e-commerce growth
 
 ---
 
-Welcome — I use machine learning,  Causal Inference,  and statistical methods to address uncertainty in decision-making systems, with a focus on **supply chain optimization**.
+Welcome — I use machine learning,  Causal Inference, statistical methods, optimization and simulation to address uncertainty in decision-making systems, with a focus on **supply chain optimization**.
 
 🔗 **Portfolio**: [nihemelandu.github.io](https://nihemelandu.github.io)
 
