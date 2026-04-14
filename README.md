@@ -1,12 +1,12 @@
 # Ngozi Ihemelandu
 
 **PhD Data Scientist**  
-Causal Inference · Machine Learning · Simulation · Optimization · Statistical Modeling  
-Turning complex customer and supply chain data into measurable e-commerce growth
+Machine Learning · Causal Inference · Simulation · Prescriptive Optimization · Statistical Modeling  
+Designing data-driven strategies for decision-making under uncertainty
 
 ---
 
-Welcome — I use machine learning,  Causal Inference, statistical methods, optimization and simulation to address uncertainty in decision-making systems, with a focus on **supply chain optimization**.
+Welcom
 
 🔗 **Portfolio**: [nihemelandu.github.io](https://nihemelandu.github.io)
 
