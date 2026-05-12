@@ -1,7 +1,7 @@
 # Ngozi Ihemelandu
 
 **PhD Data Scientist**  
-Machine Learning · Causal Inference · Simulation · Prescriptive Optimization · Statistical Modeling  
+Machine Learning · Demand Forecasting . Causal Inference · Simulation · Prescriptive Optimization · Statistical Modeling . Statistical Inference  
 Designing data-driven strategies for decision-making under uncertainty
 
 ---
