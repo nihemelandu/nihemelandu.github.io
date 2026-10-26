@@ -11,5 +11,6 @@ Welcom
 🔗 **Portfolio**: [nihemelandu.github.io](https://nihemelandu.github.io)
 
 📂 Featured:
-- [Research Portfolio](https://nihemelandu.github.io/research-portfolio/)
+
 - [Data Science Projects](https://nihemelandu.github.io/Data-Science-Projects/)
+- [Research Portfolio](https://nihemelandu.github.io/research-portfolio/)
